@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/add_to_cart"
+        android:enabled="true"
+        android:title="Add"
+        android:icon="@drawable/shopping"
+        support:showAsAction="ifRoom|withText"
+        />
+
+
+    <item
+        support:showAsAction="never"
+        android:title="settings"
+        android:id="@+id/settings"
+        android:icon="@drawable/setting"
+        />
+
+</menu>

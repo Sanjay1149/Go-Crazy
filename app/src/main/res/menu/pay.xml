@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/pay_from_cart"
+        android:enabled="true"
+        android:title="Pay"
+        android:icon="@drawable/payment"
+        support:showAsAction="ifRoom|withText"
+        />
+    <item
+        android:id="@+id/delete_from_cart"
+        android:enabled="true"
+        android:title="Del"
+        android:icon="@drawable/dust"
+        support:showAsAction="ifRoom|withText"
+        />
+
+    <item
+        support:showAsAction="never"
+        android:title="settings"
+        android:id="@+id/settings"
+        android:icon="@drawable/setting"
+        />
+
+
+</menu>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/full_image_view"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add To Cart"
+        android:id="@+id/cart_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp" />
+
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Quantity"
+        android:id="@+id/quantity"
+        android:layout_below="@+id/full_image_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_alignBottom="@+id/quantity"
+        android:layout_alignLeft="@+id/cart_button"
+        android:layout_alignStart="@+id/cart_button"
+        android:spinnerMode="dropdown"
+        android:layout_alignTop="@+id/quantity"
+        android:layout_alignRight="@+id/cart_button"
+        android:layout_alignEnd="@+id/cart_button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Amount"
+        android:id="@+id/amount"
+        android:layout_above="@+id/cart_button"
+        android:layout_alignLeft="@+id/quantity"
+        android:layout_alignStart="@+id/quantity"
+        android:layout_below="@+id/quantity" />
+
+    <EditText
+        android:editable="false"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:id="@+id/amount_text"
+        android:layout_below="@+id/spinner"
+        android:layout_alignBottom="@+id/amount"
+        android:layout_toRightOf="@+id/quantity"
+        android:layout_toEndOf="@+id/quantity" />
+
+</RelativeLayout>
